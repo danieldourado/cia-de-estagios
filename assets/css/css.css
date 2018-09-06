@@ -1,0 +1,16 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.main_ui_cia_logo {
+  overflow:none;
+}
+.main_ui_cia_logo img{
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+.main_ui_auto_confianca {
+    min-width:247px;
+}
