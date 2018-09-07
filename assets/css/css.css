@@ -14,3 +14,16 @@ html {
 .main_ui_auto_confianca {
     min-width:247px;
 }
+.status-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
