@@ -2,7 +2,7 @@ $(document).ready(function ()
 {
 	var quizData = {}
     var questionNumber=0;
-    const questionContainer = "#questionContainer"
+    var questionContainer = "#questionContainer1"
     const questionDiv="#question";
     const option1="#option1";
     const option2="#option2";
@@ -17,7 +17,7 @@ $(document).ready(function ()
     const diaDaSemana="dia_da_semana"
     const nivelDeAutoconfianca = "nivel_de_autoconfianca"
     
-    var stage2=new Object;
+    var questionContainer2=new Object;
     var questionLock=false;
     var numberOfQuestions;
     var score=0;
@@ -26,12 +26,13 @@ $(document).ready(function ()
     {
         quizData = data.quizData;
         numberOfQuestions=data.quizData.length; 
-        displayStatus()
         displayQuestion()
     })//gtjson
     
 function displayQuestion()
 {
+    displayStatus()
+    
     var tempQuestion = quizData[questionNumber][questionText]
     var tempOption1 = quizData[questionNumber][answers][0][content]
     $(questionContainer).append('<div id="question">'+tempQuestion+'</div>')
@@ -40,67 +41,41 @@ function displayQuestion()
     {
         $(questionContainer).append('<div class="option" id="option2">'+quizData[questionNumber][answers][1][content]+'</div>')
     }
-    return
     
     $('.option').click(function()
     {
         if(questionLock==false)
         {
             questionLock=true;	
-            //correct answer
-            if(this.id==rnd)
-            {
-                $(stage).append('<div class="feedback1">CORRECT</div>');
-                score++;
-            }
-            //wrong answer	
-            if(this.id!=rnd)
-            {
-                $(stage).append('<div class="feedback2">WRONG</div>');
-            }
-            setTimeout(function(){changeQuestion()},1000);
+            changeQuestion()
         }})
 }
 
 function displayStatus()
 {
     var tempData        = quizData[questionNumber][diaDaSemana]
-    var tempConfianca   = quizData[questionNumber][nivelDeAutoconfianca]
+    var tempConfianca   = 'Autoconfiança '+quizData[questionNumber][nivelDeAutoconfianca]
     $("#status_data").text(tempData)
     $("#status_autoconfianca").text(tempConfianca)
 }
     
+function changeQuestion(){
+	
+	questionNumber++;
+
+if(questionContainer=="#questionContainer1"){questionContainer2="#questionContainer1";questionContainer="#questionContainer2";}
+	else{questionContainer2="#questionContainer2";questionContainer="#questionContainer1";}
+
+if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide();}
+
+ $(questionContainer2).animate({"right": "+=800px"},"slow", function() {$(questionContainer2).css('right','-800px');$(questionContainer2).empty();});
+ $(questionContainer).animate({"right": "+=800px"},"slow", function() {questionLock=false;});
+}//change question
+
+function displayFinalSlide(){
+	
+	$(questionContainer).append('<div class="questionText">You have finished the quiz!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
+	
+}//display final slide
     	
-    	
-    	
-    	
-    	
-    	function changeQuestion(){
-    		
-    		questionNumber++;
-    	
-    	if(stage=="#game1"){stage2="#game1";stage="#game2";}
-    		else{stage2="#game2";stage="#game1";}
-    	
-    	if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide();}
-    	
-    	 $(stage2).animate({"right": "+=800px"},"slow", function() {$(stage2).css('right','-800px');$(stage2).empty();});
-    	 $(stage).animate({"right": "+=800px"},"slow", function() {questionLock=false;});
-    	}//change question
-    	
-    
-    	
-    	
-    	function displayFinalSlide(){
-    		
-    		$(stage).append('<div class="questionText">You have finished the quiz!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
-    		
-    	}//display final slide
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-});//doc ready
+});

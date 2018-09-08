@@ -58,3 +58,18 @@ body {
       border:#FC0 solid 2px;
       color:#FC0;
       }
+      
+#questionContainer2{
+    margin:auto;
+    width:800px;
+    height:400px;
+    right:-800px;
+    position:absolute;
+}      
+#questionContainer1{
+    margin:auto;
+    width:800px;
+    height:400px;
+    right:0;
+    position:absolute;
+}

@@ -4,8 +4,7 @@
 	  {
 			"tela": "1",
 			"cenario": "Cidade",
-			"relogio": "08am",
-			"dia_da_semana": "Segunda Feira",
+			"dia_da_semana": "Segunda Feira 08am",
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "",
@@ -22,8 +21,7 @@
 		{
 			"tela": "1.1",
 			"cenario": "Cidade",
-			"relogio": "08am",
-			"dia_da_semana": "Segunda Feira",
+			"dia_da_semana": "Segunda Feira 08am",
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "O nível de dificuldade vai afetar a facilidade de conseguir uma vaga:",
