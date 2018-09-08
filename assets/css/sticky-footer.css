@@ -35,14 +35,26 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: white;
   /* Set the fixed height of the footer here */
   height: 257px;
-  line-height: 257px; /* Vertically center the text there */
+  line-height: 34px; /* Vertically center the text there */
   background-color: #283641;
 }
 
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+.option{
+      width:400px;
+      height:40px;
+      margin:15px;
+      font-size:18px;
+      color:#FFFFFF;
+      padding:2px;
+      padding-left:10px;
+      border: 2px solid white;
+      cursor:pointer;
+      background-color:#3399FF;
+      }
+.option:hover{
+      border:#FC0 solid 2px;
+      color:#FC0;
+      }
