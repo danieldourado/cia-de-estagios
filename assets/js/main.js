@@ -14,7 +14,8 @@ $(document).ready(function ()
     const show_condition = "show_condition"
     const answers = "answers"
     const value = "value"
-    
+    const diaDaSemana="dia_da_semana"
+    const nivelDeAutoconfianca = "nivel_de_autoconfianca"
     
     var stage2=new Object;
     var questionLock=false;
@@ -25,7 +26,8 @@ $(document).ready(function ()
     {
         quizData = data.quizData;
         numberOfQuestions=data.quizData.length; 
-        displayQuestion();
+        displayStatus()
+        displayQuestion()
     })//gtjson
     
 function displayQuestion()
@@ -58,7 +60,15 @@ function displayQuestion()
             }
             setTimeout(function(){changeQuestion()},1000);
         }})
-}//display question
+}
+
+function displayStatus()
+{
+    var tempData        = quizData[questionNumber][diaDaSemana]
+    var tempConfianca   = quizData[questionNumber][nivelDeAutoconfianca]
+    $("#status_data").text(tempData)
+    $("#status_autoconfianca").text(tempConfianca)
+}
     
     	
     	
