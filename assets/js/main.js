@@ -32,18 +32,13 @@ $(document).ready(function ()
 function displayQuestion()
 {
     displayStatus()
+    displayBackground()
+    showPopup()
     
     var tempQuestion = quizData[questionNumber][questionText]
     var tempOption1 = quizData[questionNumber][answers][0][content]
-    var tempBackground = quizData[questionNumber]['cenario']
     $(questionContainer).append('<div id="question">'+tempQuestion+'</div>')
     $(questionContainer).append('<div class="option" id="option1">'+tempOption1+'</div>')
-    
-    $('body').css({"background":"url(../assets/interface/status_images/Final_"+tempBackground+"_CiaDeEstagios.png) no-repeat center center fixed"});  
-    $('body').css({"-webkit-background-size":"cover"});
-    $('body').css({"-moz-background-size":"cover"});
-    $('body').css({"-o-background-size":"cover"});
-    $('body').css({"background-size":"cover"});
     
     if (quizData[questionNumber][answers][1])
     {
@@ -66,6 +61,19 @@ function displayStatus()
     $("#status_data").text(tempData)
     $("#status_autoconfianca").text(tempConfianca)
 }
+
+
+function displayBackground()
+{
+    var tempBackground = quizData[questionNumber]['cenario']
+    $('body').css({"background":"url(../assets/interface/status_images/Final_"+tempBackground+"_CiaDeEstagios.png) no-repeat center center fixed"});  
+    $('body').css({"-webkit-background-size":"cover"});
+    $('body').css({"-moz-background-size":"cover"});
+    $('body').css({"-o-background-size":"cover"});
+    $('body').css({"background-size":"cover"});
+}
+
+
     
 function changeQuestion(){
 	
@@ -90,4 +98,22 @@ function displayFinalSlide(){
 	
 }//display final slide
     	
+function showPopup()
+{
+    if (!quizData[questionNumber]['texto_popup']) return
+    var tempTitulo = quizData[questionNumber]['texto_popup'][0]['titulo']
+    var tempContent = quizData[questionNumber]['texto_popup'][0]['content']
+
+    $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
+    
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    modal.style.display = "block";
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
 });
