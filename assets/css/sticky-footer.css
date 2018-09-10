@@ -62,7 +62,11 @@ body {
       border:#FFF solid 2px;
       color:#FFF;
       }
-      
+
+.btn-main-menu
+{
+  font-size:40px;
+}
 #questionContainer2{
     position: absolute;
     left: 50%;
@@ -87,7 +91,28 @@ body {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+.main-menu {
+    background: url(../interface/MainMenu_BG.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #283641; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.main-menu img{
+  max-width:70%; /* you can use % */
+  height: auto;
+}
+
 .modal-content {
     background-color: #283641;
     margin: 15% auto; /* 15% from the top and centered */

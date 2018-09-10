@@ -1,5 +1,11 @@
 $(document).ready(function () 
 {
+    $('.btn-main-menu').click(function()
+    {
+        $('.main-menu').hide()
+    })
+        
+        
 	var quizData = {}
     var questionNumber=0;
     var questionContainer = "#questionContainer1"
@@ -94,7 +100,7 @@ if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide()
 }//change question
 
 function displayFinalSlide(){
-	
+
 	$(questionContainer).append('<div class="questionText">You have finished the quiz!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
 	
 }//display final slide
