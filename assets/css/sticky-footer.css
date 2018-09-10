@@ -43,20 +43,19 @@ body {
 }
 
 .option{
-      width:400px;
-      height:40px;
       margin:15px;
       font-size:18px;
-      color:#FFFFFF;
       padding:2px;
       padding-left:10px;
       border: 2px solid white;
       cursor:pointer;
-      background-color:#3399FF;
+      border-color: #0d7680;
+      background-color: transparent;
+      color: #fff;
       }
 .option:hover{
-      border:#FC0 solid 2px;
-      color:#FC0;
+      border:#FFF solid 2px;
+      color:#FFF;
       }
       
 #questionContainer2{
