@@ -62,14 +62,18 @@ function displayStatus()
 function changeQuestion(){
 	
 	questionNumber++;
+	$(questionContainer).empty()
+	questionLock=false
+	displayQuestion()
+	return
 
 if(questionContainer=="#questionContainer1"){questionContainer2="#questionContainer1";questionContainer="#questionContainer2";}
 	else{questionContainer2="#questionContainer2";questionContainer="#questionContainer1";}
 
 if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide();}
 
- $(questionContainer2).animate({"right": "+=800px"},"slow", function() {$(questionContainer2).css('right','-800px');$(questionContainer2).empty();});
- $(questionContainer).animate({"right": "+=800px"},"slow", function() {questionLock=false;});
+ $(questionContainer2).animate({"right": "+=50%"},"slow", function() {$(questionContainer2).css('right','-1080px');$(questionContainer2).empty();});
+ $(questionContainer).animate({"right": "+=50%"},"slow", function() {questionLock=false;});
 }//change question
 
 function displayFinalSlide(){

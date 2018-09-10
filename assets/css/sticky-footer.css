@@ -60,16 +60,12 @@ body {
       }
       
 #questionContainer2{
-    margin:auto;
-    width:800px;
-    height:400px;
-    right:-800px;
-    position:absolute;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }      
 #questionContainer1{
-    margin:auto;
-    width:800px;
-    height:400px;
-    right:0;
-    position:absolute;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
