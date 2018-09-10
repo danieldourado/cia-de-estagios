@@ -1,10 +1,19 @@
 html {
   position: relative;
   min-height: 100%;
+  
+  background: url(../interface/status_images/Final_Cidade_CiaDeEstagios.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: rgba(200, 54, 54, 0);
+
 }
 
 .main_ui_cia_logo {
@@ -67,4 +76,8 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.img-background{
+
 }
