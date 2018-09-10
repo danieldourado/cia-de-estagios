@@ -50,7 +50,8 @@ function displayQuestion()
         if(questionLock==false)
         {
             questionLock=true;	
-            changeQuestion()
+            var showAfter = showPopup()
+            if (showAfter == false) changeQuestion()
         }})
 }
 
@@ -100,18 +101,26 @@ function displayFinalSlide(){
     	
 function showPopup()
 {
-    if (!quizData[questionNumber]['texto_popup']) return
+    if (!quizData[questionNumber]['texto_popup']) return false
+    if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after' && questionLock==false) return true
+    if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'before' && questionLock==true) return false
+    
     var tempTitulo = quizData[questionNumber]['texto_popup'][0]['titulo']
     var tempContent = quizData[questionNumber]['texto_popup'][0]['content']
 
     $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
-    
+
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
     modal.style.display = "block";
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after')
+            {
+                changeQuestion()
+                return true
+            }
         }
     }
 }
