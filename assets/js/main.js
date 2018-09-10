@@ -35,8 +35,16 @@ function displayQuestion()
     
     var tempQuestion = quizData[questionNumber][questionText]
     var tempOption1 = quizData[questionNumber][answers][0][content]
+    var tempBackground = quizData[questionNumber]['cenario']
     $(questionContainer).append('<div id="question">'+tempQuestion+'</div>')
     $(questionContainer).append('<div class="option" id="option1">'+tempOption1+'</div>')
+    
+    $('body').css({"background":"url(../assets/interface/status_images/Final_"+tempBackground+"_CiaDeEstagios.png) no-repeat center center fixed"});  
+    $('body').css({"-webkit-background-size":"cover"});
+    $('body').css({"-moz-background-size":"cover"});
+    $('body').css({"-o-background-size":"cover"});
+    $('body').css({"background-size":"cover"});
+    
     if (quizData[questionNumber][answers][1])
     {
         $(questionContainer).append('<div class="option" id="option2">'+quizData[questionNumber][answers][1][content]+'</div>')
