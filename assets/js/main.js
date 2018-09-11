@@ -2,7 +2,9 @@ $(document).ready(function ()
 {
     $('.btn-main-menu').click(function()
     {
+        $('#main-menu').hide()
         $('.main-menu').hide()
+        
         displayQuestion()
     })
         
@@ -10,6 +12,7 @@ $(document).ready(function ()
 	var quizData = {}
 	var resultsData = {}
 	var answersData = {}
+	var tipsData = {}
     var questionNumber=0;
     var questionContainer = "#questionContainer1"
     const questionDiv="#question";
@@ -35,6 +38,7 @@ $(document).ready(function ()
     {
         quizData = data.quizData;
         resultsData = data.resultsData
+        tipsData = data.tipsData
         numberOfQuestions=data.quizData.length; 
     })
     
@@ -152,9 +156,11 @@ function showPopup()
 
 function displayFinalSlide()
 {
+    $('.main-menu').show()
     var resultsArray = getResultsArray(answersData)
     var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
+    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
     for (var result in resultsArray)
     {
         if(resultsArray[result] == "none") continue
@@ -168,9 +174,34 @@ function displayFinalSlide()
     modal.style.display = "block";
     window.onclick = function(event) {
         if (event.target == btn) {
-            modal.style.display = "none";
+            displayTips()
             }
         }
+}
+
+function displayTips()
+{
+    var finalHTML = "<div class='row justify-content-center align-items-center dica-word'>DICAS</div>"
+    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
+    
+    finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['title']+"</div>"
+    for (var tips in tipsData['tips'])
+    {
+        finalHTML += "<div class='result'>"+tipsData['tips'][tips]+"</div>"
+    }
+    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
+    finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['ending']+"</div>"
+    finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
+    $(".modal-content").html(finalHTML)
+
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    modal.style.display = "block";
+    window.onclick = function(event) {
+        if (event.target == btn) {
+            modal.style.display = "none";
+            }
+        }    
 }
 
 function getResultsArray(answersData)

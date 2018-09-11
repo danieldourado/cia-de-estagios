@@ -502,6 +502,16 @@
 				}
 			]
 		}
-
-	]
+	],
+	"tipsData": {
+		"title": "Se liga nessas super dicas para turbinar seu cadastro na Companhia de Estágios:",
+		"ending": "Esperamos que as dicas ajudem a conseguir o estágio dos sonhos! Atualize seu cadastro, se aplique nas vagas e boa sorte!!",
+		"tips": [
+			"As empresas buscam pessoas com nível de inglês de básico para cima! É importante deixar seu nível de idioma atualizado! Se estiver cursando suas chances aumentam ainda mais!",
+			"Hoje boa parte das vagas pede algum conhecimento em Excel! Se você não teve a chance de fazer um curso não tem problema! Você pode estudar um pouco por tutoriais na internet! Ter um nível de Excel intermediário ou superior aumenta muito suas chances de ser chamado!",
+			"Atenção: a maioria das vagas é das 9 às 16 horas com uma hora de almoço! Isso significa que as empresas buscam mais pessoas que estudam a noite do que de manhã. Se você estuda de manhã ou a tarde mas pode mudar seu horário para o noturno em caso de aprovação em alguma empresa já pode deixar no cadastro essa informação! Suas chances de ser chamado vão aumentar!",
+			"Se não tem experiência profissional anterior não se preocupe! As empresas não olham para isso! Elas estão avaliando potencial e você pode deixar seu currículo mais interessante se colocar por exemplo informações sobre trabalho voluntário, participação em entidades acadêmicas como a empresa jr. da sua faculdade e se tiver um intercâmbio será também um grande diferencial.",
+			"Por fim, fique atento ao ano de formação que as empresas pedem nas vagas! Se você não estiver dentro do ano de formação inicialmente solicitado mas consegue prorrogar sua formação por exemplo, pode atualizar no sistema."
+		]
+	}
 }
