@@ -41,7 +41,8 @@ $(document).ready(function ()
         tipsData = data.tipsData
         numberOfQuestions=data.quizData.length; 
     })
-    
+    $('#BGM_music_theme_song_v02').prop("volume", 0.5);
+
     registerSoundOnButton()
     
 function displayQuestion()
@@ -61,7 +62,7 @@ function displayQuestion()
     }
     
     registerSoundOnButton()
-    
+    $('#SFX_feedback_screen_swoosh')[0].play()
     $('.option').click(function()
     {
         if(questionLock==false)
