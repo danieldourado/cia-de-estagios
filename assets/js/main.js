@@ -64,7 +64,7 @@ function displayQuestion()
         {
             questionLock=true;	
             registerAnswer(this.id)
-            var showAfter = showPopup()
+            var showAfter = showPopup(this.id)
             if (showAfter == false) changeQuestion()
         }})
 }
@@ -128,14 +128,33 @@ if(questionContainer=="#questionContainer1"){questionContainer2="#questionContai
  $(questionContainer).animate({"right": "+=50%"},"slow", function() {questionLock=false;});
  */
 }
-function showPopup()
+function showPopup(questionID = "1")
 {
+    
     if (!quizData[questionNumber]['texto_popup']) return false
     if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after' && questionLock==false) return true
     if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'before' && questionLock==true) return false
     
-    var tempTitulo = quizData[questionNumber]['texto_popup'][0]['titulo']
-    var tempContent = quizData[questionNumber]['texto_popup'][0]['content']
+    var lastChar = questionID.substr(questionID.length - 1)
+    var tempTitulo  = ""
+    var tempContent = ""
+    
+    if( (quizData[questionNumber]['texto_popup'][0]['show_condition'] == lastChar) || 
+        (quizData[questionNumber]['texto_popup'][0]['show_condition'] == 'none'))
+    {
+        tempTitulo = quizData[questionNumber]['texto_popup'][0]['titulo']
+        tempContent = quizData[questionNumber]['texto_popup'][0]['content']
+    }
+    if( quizData[questionNumber]['texto_popup'][1])
+    {
+        if( quizData[questionNumber]['texto_popup'][1]['show_condition'] == lastChar)
+        {
+            tempTitulo = quizData[questionNumber]['texto_popup'][1]['titulo']
+            tempContent = quizData[questionNumber]['texto_popup'][1]['content']        
+        }
+    }
+    
+    if (tempContent == "") return false
 
     $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
 
@@ -191,7 +210,7 @@ function displayTips()
     }
     finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['ending']+"</div>"
-    finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
+    //finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
     $(".modal-content").html(finalHTML)
 
     var modal = document.getElementById('myModal');
