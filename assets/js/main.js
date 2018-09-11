@@ -73,7 +73,7 @@ function displayStatus()
 function displayBackground()
 {
     var tempBackground = quizData[questionNumber]['cenario']
-    $('body').css({"background":"url(../assets/interface/status_images/Final_"+tempBackground+"_CiaDeEstagios.png) no-repeat center center fixed"});  
+    $('body').css({"background":"url(../assets/interface/status_images/Final_"+tempBackground+"_CiaDeEstagios.jpg) no-repeat center center fixed"});  
     $('body').css({"-webkit-background-size":"cover"});
     $('body').css({"-moz-background-size":"cover"});
     $('body').css({"-o-background-size":"cover"});
