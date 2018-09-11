@@ -168,6 +168,7 @@ function showPopup(questionID = "1")
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            $("#SFX_interface_click_popup")[0].play();
             if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after')
             {
                 changeQuestion()
