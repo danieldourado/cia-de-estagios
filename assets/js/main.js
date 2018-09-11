@@ -197,6 +197,8 @@ function displayFinalSlide()
     finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Avançar</div></div>'
     $(".modal-content").html(finalHTML)
 
+    $('#SFX_feedback_results')[0].play()
+    
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
     modal.style.display = "block";
