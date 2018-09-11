@@ -3,6 +3,7 @@ $(document).ready(function ()
     $('.btn-main-menu').click(function()
     {
         $('.main-menu').hide()
+        displayQuestion()
     })
         
         
@@ -32,8 +33,7 @@ $(document).ready(function ()
     {
         quizData = data.quizData;
         numberOfQuestions=data.quizData.length; 
-        displayQuestion()
-    })//gtjson
+    })
     
 function displayQuestion()
 {

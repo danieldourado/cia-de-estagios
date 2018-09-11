@@ -121,3 +121,9 @@ body {
     width: 80%; /* Could be more or less, depending on screen size */
     color:white;
 }
+
+.preload-images{
+    position:absolute;
+    left:-9999px;
+    display: none;
+}
