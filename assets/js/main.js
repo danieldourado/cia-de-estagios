@@ -42,6 +42,8 @@ $(document).ready(function ()
         numberOfQuestions=data.quizData.length; 
     })
     
+    registerSoundOnButton()
+    
 function displayQuestion()
 {
     displayStatus()
@@ -57,6 +59,8 @@ function displayQuestion()
     {
         $(questionContainer).append('<div class="option" id="'+option2+'">'+quizData[questionNumber][answers][1][content]+'</div>')
     }
+    
+    registerSoundOnButton()
     
     $('.option').click(function()
     {
@@ -232,5 +236,15 @@ function getResultsArray(answersData)
         if(answersData[item]['a'] < answersData[item]['b']) answersArray.push(resultsData[parseInt(item)-1]['result'][1]['content'])
     }
     return answersArray
+}
+
+function registerSoundOnButton()
+{
+    $(".option").mouseenter(function() {
+      $("#SFX_interface_mouse_over")[0].play();
+    });    
+    $(".option").click(function() {
+      $("#SFX_interface_click_interface")[0].play();
+    });
 }
 });
