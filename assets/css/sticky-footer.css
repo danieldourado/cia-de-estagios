@@ -14,10 +14,8 @@ body {
 }
 
 .main_ui_cia_logo {
-  overflow:none;
 }
 .main_ui_cia_logo img{
-  position:absolute;
   right:0px;
   top:0px;
 }
@@ -27,15 +25,15 @@ body {
 .status-text {
     width: 100%;
     position: absolute;
+    font-weight: bold;
     top: 50%;
     left: 60%;
-    transform: translate(-50%, -50%);
+    transform: translate(-41%, -50%);
 }
 .text-container {
     position: relative;
-    text-align: center;
     color: white;
-    font-size: 14px;
+    font-size: 11px;
 }
 .footer {
   position: absolute;
