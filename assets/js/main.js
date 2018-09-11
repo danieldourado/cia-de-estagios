@@ -160,7 +160,10 @@ function showPopup(questionID = "1")
     }
     
     if (tempContent == "") return false
-
+    
+    var hasSound = quizData[questionNumber]['texto_popup'][0]['play_sound']
+    if(hasSound)$('#'+hasSound)[0].play()
+    
     $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
 
     var modal = document.getElementById('myModal');

@@ -302,7 +302,8 @@
 				"titulo": "",
 				"content": "Lembra da primeira entrevista? Que você foi para a fase final? Pois bem: Parabéns! Você foi aprovado! Seu feeling estava certo, você realmente fez uma ótima entrevista!.",
 				"when_to_show": "before",
-				"show_condition": "none"
+				"show_condition": "none",
+				"play_sound": "SFX_feedback_achievement"
 			}],
 			"texto_main_ui": "Você começou a trabalhar e na sua primeira semana você:",
 			"answers": [{
