@@ -14,7 +14,6 @@
 			}],
 			"texto_main_ui": "Você conseguirá encontrar uma vaga no seu perfil e mostrar que é o melhor candidato para a vaga?",
 			"answers": [{
-				"value": "1",
 				"content": "Pode apostar que sim!"
 			}]
 		},
@@ -31,11 +30,13 @@
 			}],
 			"texto_main_ui": "Você escolhe:",
 			"answers": [{
-					"value": "1",
+					"item": "1",
+					"pontua":"a",
 					"content": "Fácil"
 				},
 				{
-					"value": "2",
+					"item": "1",
+					"pontua":"b",
 					"content": "Difícil"
 				}
 			]
@@ -54,11 +55,13 @@
 			}],
 			"texto_main_ui": "Ao buscar vagas no site você:",
 			"answers": [{
-					"value": "1",
+					"item": "6",
+					"pontua":"a",
 					"content": "Lê e pesquisa os requisitos para ver se eles batem com o seu perfil antes de se aplicar."
 				},
 				{
-					"value": "2",
+					"item": "6",
+					"pontua":"b",
 					"content": "Se aplica em todas para ter mais chances."
 				}
 			]
@@ -71,11 +74,13 @@
 			"nivel_de_autoconfianca": "85%",
 			"texto_main_ui": "Depois de se aplicar em algumas vagas você foi chamado para uma entrevista. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "6",
+					"pontua":"b",
 					"content": "Deixo para dar uma pesquisada sobre a empresa durante o trajeto de ida."
 				},
 				{
-					"value": "2",
+					"item": "6",
+					"pontua":"a",
 					"content": "Inicio imediatamente uma enorme pesquisa sobre a empresa. Adiciono as pessoas do Rh da empresa no LinkedIn."
 				}
 			]
@@ -101,11 +106,13 @@
 			],
 			"texto_main_ui": "Você está a caminho da entrevista, falta uma estação para você descer e a pessoa que está do seu lado começa a passar mal:",
 			"answers": [{
-					"value": "1",
+					"item": "7",
+					"pontua":"a",
 					"content": "Perco a estação, mesmo que me atrase 5 min. para a entrevista e ajudo a pessoa."
 				},
 				{
-					"value": "2",
+					"item": "7",
+					"pontua":"b",
 					"content": "Desço na estação porque não posso chegar atrasado e correr o risco de perder a entrevista."
 				}
 			]
@@ -124,11 +131,13 @@
 			}],
 			"texto_main_ui": "Good News! Ligaram marcando uma entrevista na sexta a tarde, você deu ok e ao desligar se lembrou que tem casamento na mesma sexta às 20 horas. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "5",
+					"pontua":"b",
 					"content": "Tenta remarcar a entrevista."
 				},
 				{
-					"value": "2",
+					"item": "5",
+					"pontua":"a",
 					"content": "Vai na entrevista mesmo correndo o risco de se atrasar um pouco para o casamento."
 				}
 			]
@@ -147,11 +156,13 @@
 			}],
 			"texto_main_ui": "Ao chegar vê a sala de espera lotada de candidatos. Aí você:",
 			"answers": [{
-					"value": "1",
+					"item": "4",
+					"pontua":"a",
 					"content": "Começa a conversar com algum deles."
 				},
 				{
-					"value": "2",
+					"item": "4",
+					"pontua":"b",
 					"content": "Fica quieto só observando."
 				}
 			]
@@ -164,11 +175,13 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_main_ui": "Já é terça feira. Após ser aprovado na primeira etapa ontem, você está indo então para a etapa final e para não se atrasar pega um táxi. Entrando você...",
 			"answers": [{
-					"value": "1",
+					"item": "4",
+					"pontua":"a",
 					"content": "Puxa conversa com o motorista."
 				},
 				{
-					"value": "2",
+					"item": "4",
+					"pontua":"b",
 					"content": "Vai em silêncio."
 				}
 			]
@@ -181,11 +194,13 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_main_ui": "No elevador outro candidato que chegou em cima da hora comenta: ‘’putz, qual andar era mesmo o do processo de seleção?’’ Você:",
 			"answers": [{
-					"value": "1",
+					"item": "3",
+					"pontua":"a",
 					"content": "Fala o andar correto e que também está indo para lá."
 				},
 				{
-					"value": "2",
+					"item": "3",
+					"pontua":"b",
 					"content": "Fala o andar errado para ele aprender a prestar mais atenção."
 				}
 			]
@@ -198,11 +213,13 @@
 			"nivel_de_autoconfianca": "88%",
 			"texto_main_ui": "Você passou pela primeira fase e já está na fase final! Agora é só você e mais dois finalistas! Vocês aguardando na sala de espera e um deles (o do elevador) pede ajuda para entender melhor sobre um dos negócios da empresa. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "7",
+					"pontua":"a",
 					"content": "Ajuda e compartilha o que pesquisou sobre a empresa."
 				},
 				{
-					"value": "2",
+					"item": "7",
+					"pontua":"b",
 					"content": "Finge que não sabe de nada e desconversa."
 				}
 			]
@@ -215,11 +232,13 @@
 			"nivel_de_autoconfianca": "95%",
 			"texto_main_ui": "Você fez uma ótima entrevista, volta para casa todo confiante. Ao chegar em casa você percebe que voltou com o crachá do prédio. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "3",
+					"pontua":"b",
 					"content": "Joga fora porque não vai mais usar mesmo."
 				},
 				{
-					"value": "2",
+					"item": "3",
+					"pontua":"a",
 					"content": "Volta lá para devolver."
 				}
 			]
@@ -232,11 +251,13 @@
 			"nivel_de_autoconfianca": "88%",
 			"texto_main_ui": "Opa! Surgiu mais uma entrevista! Enquanto você espera o resultado da anterior aproveita para conhecer mais essa oportunidade. Bora para mais uma entrevista! Você:",
 			"answers": [{
-					"value": "1",
+					"item": "2",
+					"pontua":"b",
 					"content": "Uso um traje sport social para ficar bem apresentável e à vontade."
 				},
 				{
-					"value": "2",
+					"item": "2",
+					"pontua":"a",
 					"content": "Uso o clássico: camisa branca e calça preta."
 				}
 			]
@@ -262,11 +283,13 @@
 			],
 			"texto_main_ui": "Ao chegar você vê que a empresa tem paredes revestidas de madeira, sofá clássico, todo mundo parece que não fala, só sussurra, e todos usam traje social completo. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "2",
+					"pontua":"b",
 					"content": "Agradece a oportunidade e vai embora. Seu perfil de empresa é outro."
 				},
 				{
-					"value": "2",
+					"item": "2",
+					"pontua":"a",
 					"content": "Fica motivado com aquele ambiente formal e até dá uma ajustada na gravata."
 				}
 			]
@@ -285,11 +308,13 @@
 			}],
 			"texto_main_ui": "Você começou a trabalhar e na sua primeira semana você:",
 			"answers": [{
-					"value": "1",
+					"item": "4",
+					"pontua":"a",
 					"content": "Socializa com toda galera."
 				},
 				{
-					"value": "2",
+					"item": "4",
+					"pontua":"b",
 					"content": "Foca em aprender tudo que pode e entregar o que te pediram."
 				}
 			]
@@ -302,11 +327,13 @@
 			"nivel_de_autoconfianca": "80%",
 			"texto_main_ui": "Você está trabalhando e percebeu que ninguém meio que tem chefe na empresa. A gestão é horizontal. Cada um é responsável por entregar sua parte e trabalhar em equipe. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "2",
+					"pontua":"b",
 					"content": "Se sente super à vontade e começa a fazer suas tarefas."
 				},
 				{
-					"value": "2",
+					"item": "2",
+					"pontua":"a",
 					"content": "Se vira mas preferiria ter um líder e regras e tarefas claras."
 				}
 			]
@@ -319,11 +346,13 @@
 			"nivel_de_autoconfianca": "80%",
 			"texto_main_ui": "Você já está trabalhando há 1 semana e recebe uma tarefa do seu chefe para entregar em 1 semana. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "6",
+					"pontua":"b",
 					"content": "Começo a fazer imediatamente."
 				},
 				{
-					"value": "2",
+					"item": "6",
+					"pontua":"a",
 					"content": "Me programo para fazer um planejamento de como executar a tarefa."
 				}
 			]
@@ -336,11 +365,13 @@
 			"nivel_de_autoconfianca": "85%",
 			"texto_main_ui": "Você está trabalhando em uma tarefa e deu seu horário. Você:",
 			"answers": [{
-					"value": "1",
+					"item": "5",
+					"pontua":"b",
 					"content": "Vai embora e termina amanhã."
 				},
 				{
-					"value": "2",
+					"item": "5",
+					"pontua":"a",
 					"content": "Dou uma esticadinha e termino hoje mesmo."
 				}
 			]
@@ -359,11 +390,13 @@
 			}],
 			"texto_main_ui": "Você foi convocado para trabalhar no sábado sem hora extra. Sua reação:",
 			"answers": [{
-					"value": "1",
+					"item": "5",
+					"pontua":"b",
 					"content": "Pensa: ‘’essa empresa só esfola o funcionário mesmo’’ mas vai."
 				},
 				{
-					"value": "2",
+					"item": "5",
+					"pontua":"a",
 					"content": "Respira fundo e pensa: ‘’ok. É a primeira vez que isso acontece, vamos ajudar’’."
 				}
 			]
@@ -382,10 +415,9 @@
 			}],
 			"texto_main_ui": "",
 			"answers": [{
-				"value": "1",
+				"item": "1",
 				"content": "Ir para o resumo"
 			}]
 		}
-
 	]
 }
