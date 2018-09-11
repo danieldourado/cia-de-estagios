@@ -1,7 +1,5 @@
 {
-	"quizData": 
-	[
-	  {
+	"quizData": [{
 			"tela": "1",
 			"cenario": "Cidade",
 			"dia_da_semana": "Segunda Feira 08am",
@@ -31,12 +29,12 @@
 			"texto_main_ui": "Você escolhe:",
 			"answers": [{
 					"item": "1",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Fácil"
 				},
 				{
 					"item": "1",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Difícil"
 				}
 			]
@@ -56,12 +54,12 @@
 			"texto_main_ui": "Ao buscar vagas no site você:",
 			"answers": [{
 					"item": "6",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Lê e pesquisa os requisitos para ver se eles batem com o seu perfil antes de se aplicar."
 				},
 				{
 					"item": "6",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Se aplica em todas para ter mais chances."
 				}
 			]
@@ -75,12 +73,12 @@
 			"texto_main_ui": "Depois de se aplicar em algumas vagas você foi chamado para uma entrevista. Você:",
 			"answers": [{
 					"item": "6",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Deixo para dar uma pesquisada sobre a empresa durante o trajeto de ida."
 				},
 				{
 					"item": "6",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Inicio imediatamente uma enorme pesquisa sobre a empresa. Adiciono as pessoas do Rh da empresa no LinkedIn."
 				}
 			]
@@ -107,12 +105,12 @@
 			"texto_main_ui": "Você está a caminho da entrevista, falta uma estação para você descer e a pessoa que está do seu lado começa a passar mal:",
 			"answers": [{
 					"item": "7",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Perco a estação, mesmo que me atrase 5 min. para a entrevista e ajudo a pessoa."
 				},
 				{
 					"item": "7",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Desço na estação porque não posso chegar atrasado e correr o risco de perder a entrevista."
 				}
 			]
@@ -132,12 +130,12 @@
 			"texto_main_ui": "Good News! Ligaram marcando uma entrevista na sexta a tarde, você deu ok e ao desligar se lembrou que tem casamento na mesma sexta às 20 horas. Você:",
 			"answers": [{
 					"item": "5",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Tenta remarcar a entrevista."
 				},
 				{
 					"item": "5",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Vai na entrevista mesmo correndo o risco de se atrasar um pouco para o casamento."
 				}
 			]
@@ -157,12 +155,12 @@
 			"texto_main_ui": "Ao chegar vê a sala de espera lotada de candidatos. Aí você:",
 			"answers": [{
 					"item": "4",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Começa a conversar com algum deles."
 				},
 				{
 					"item": "4",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Fica quieto só observando."
 				}
 			]
@@ -176,12 +174,12 @@
 			"texto_main_ui": "Já é terça feira. Após ser aprovado na primeira etapa ontem, você está indo então para a etapa final e para não se atrasar pega um táxi. Entrando você...",
 			"answers": [{
 					"item": "4",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Puxa conversa com o motorista."
 				},
 				{
 					"item": "4",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Vai em silêncio."
 				}
 			]
@@ -195,12 +193,12 @@
 			"texto_main_ui": "No elevador outro candidato que chegou em cima da hora comenta: ‘’putz, qual andar era mesmo o do processo de seleção?’’ Você:",
 			"answers": [{
 					"item": "3",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Fala o andar correto e que também está indo para lá."
 				},
 				{
 					"item": "3",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Fala o andar errado para ele aprender a prestar mais atenção."
 				}
 			]
@@ -214,12 +212,12 @@
 			"texto_main_ui": "Você passou pela primeira fase e já está na fase final! Agora é só você e mais dois finalistas! Vocês aguardando na sala de espera e um deles (o do elevador) pede ajuda para entender melhor sobre um dos negócios da empresa. Você:",
 			"answers": [{
 					"item": "7",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Ajuda e compartilha o que pesquisou sobre a empresa."
 				},
 				{
 					"item": "7",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Finge que não sabe de nada e desconversa."
 				}
 			]
@@ -233,12 +231,12 @@
 			"texto_main_ui": "Você fez uma ótima entrevista, volta para casa todo confiante. Ao chegar em casa você percebe que voltou com o crachá do prédio. Você:",
 			"answers": [{
 					"item": "3",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Joga fora porque não vai mais usar mesmo."
 				},
 				{
 					"item": "3",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Volta lá para devolver."
 				}
 			]
@@ -252,12 +250,12 @@
 			"texto_main_ui": "Opa! Surgiu mais uma entrevista! Enquanto você espera o resultado da anterior aproveita para conhecer mais essa oportunidade. Bora para mais uma entrevista! Você:",
 			"answers": [{
 					"item": "2",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Uso um traje sport social para ficar bem apresentável e à vontade."
 				},
 				{
 					"item": "2",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Uso o clássico: camisa branca e calça preta."
 				}
 			]
@@ -284,12 +282,12 @@
 			"texto_main_ui": "Ao chegar você vê que a empresa tem paredes revestidas de madeira, sofá clássico, todo mundo parece que não fala, só sussurra, e todos usam traje social completo. Você:",
 			"answers": [{
 					"item": "2",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Agradece a oportunidade e vai embora. Seu perfil de empresa é outro."
 				},
 				{
 					"item": "2",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Fica motivado com aquele ambiente formal e até dá uma ajustada na gravata."
 				}
 			]
@@ -309,12 +307,12 @@
 			"texto_main_ui": "Você começou a trabalhar e na sua primeira semana você:",
 			"answers": [{
 					"item": "4",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Socializa com toda galera."
 				},
 				{
 					"item": "4",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Foca em aprender tudo que pode e entregar o que te pediram."
 				}
 			]
@@ -328,12 +326,12 @@
 			"texto_main_ui": "Você está trabalhando e percebeu que ninguém meio que tem chefe na empresa. A gestão é horizontal. Cada um é responsável por entregar sua parte e trabalhar em equipe. Você:",
 			"answers": [{
 					"item": "2",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Se sente super à vontade e começa a fazer suas tarefas."
 				},
 				{
 					"item": "2",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Se vira mas preferiria ter um líder e regras e tarefas claras."
 				}
 			]
@@ -347,12 +345,12 @@
 			"texto_main_ui": "Você já está trabalhando há 1 semana e recebe uma tarefa do seu chefe para entregar em 1 semana. Você:",
 			"answers": [{
 					"item": "6",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Começo a fazer imediatamente."
 				},
 				{
 					"item": "6",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Me programo para fazer um planejamento de como executar a tarefa."
 				}
 			]
@@ -366,12 +364,12 @@
 			"texto_main_ui": "Você está trabalhando em uma tarefa e deu seu horário. Você:",
 			"answers": [{
 					"item": "5",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Vai embora e termina amanhã."
 				},
 				{
 					"item": "5",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Dou uma esticadinha e termino hoje mesmo."
 				}
 			]
@@ -391,12 +389,12 @@
 			"texto_main_ui": "Você foi convocado para trabalhar no sábado sem hora extra. Sua reação:",
 			"answers": [{
 					"item": "5",
-					"pontua":"b",
+					"pontua": "b",
 					"content": "Pensa: ‘’essa empresa só esfola o funcionário mesmo’’ mas vai."
 				},
 				{
 					"item": "5",
-					"pontua":"a",
+					"pontua": "a",
 					"content": "Respira fundo e pensa: ‘’ok. É a primeira vez que isso acontece, vamos ajudar’’."
 				}
 			]
@@ -419,5 +417,91 @@
 				"content": "Ir para o resumo"
 			}]
 		}
+	],
+	"resultsData": [{
+			"item": "1",
+			"result": [{
+					"pontua": "a",
+					"content": "Fácil"
+				},
+				{
+					"pontua": "b",
+					"content": "Difícil"
+				}
+			]
+		},
+		{
+			"item": "2",
+			"result": [{
+					"pontua": "a",
+					"content": "Você gosta de um ambiente mais tradicional, organizado e com regras claras. Temos várias vagas legais em empresas assim!"
+				},
+				{
+					"pontua": "b",
+					"content": "Você gosta de ambientes dinâmicos e modernos! Temos várias vagas legais em empresas com seu perfil!"
+				}
+			]
+		},
+		{
+			"item": "3",
+			"result": [{
+					"pontua": "a",
+					"content": "Para você nada de jeitinho brasileiro, certo? As empresas buscam pessoas com os seus valores!"
+				},
+				{
+					"pontua": "b",
+					"content": "none"
+				}
+			]
+		},
+		{
+			"item": "4",
+			"result": [{
+					"pontua": "a",
+					"content": "Conversar e manter relações com as pessoas é muito importante! Algumas de nossas empresas procuram candidatos com a sua capacidade de interagir e se relacionar!"
+				},
+				{
+					"pontua": "b",
+					"content": "Várias vagas exigem perfis observadores, analíticos e mais introspectivos, fique de olho em nosso painel de vagas para se aplicar!"
+				}
+			]
+		},
+		{
+			"item": "5",
+			"result": [{
+					"pontua": "a",
+					"content": "Missão dada é missão cumprida! Toda empresa quer contar com alguém como você!"
+				},
+				{
+					"pontua": "b",
+					"content": "Fazer o que é combinado, quando é combinado é muito importante mas ter alguma flexibilidade para ir além e fazer o que não foi combinado às vezes pode ser esperada pelas empresas ;)"
+				}
+			]
+		},
+		{
+			"item": "6",
+			"result": [{
+					"pontua": "a",
+					"content": "Todas as empresas buscam perfis que planejam antes de executar mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga que você se aplicar!"
+				},
+				{
+					"pontua": "b",
+					"content": "Todas as empresas buscam perfis que planejam antes de executar mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga que você se aplicar!"
+				}
+			]
+		},
+		{
+			"item": "7",
+			"result": [{
+					"pontua": "a",
+					"content": "none"
+				},
+				{
+					"pontua": "b",
+					"content": "As empresas valorizam quem se preocupa sempre em ajudar! Procurar dar uma força as vezes é importante!"
+				}
+			]
+		}
+
 	]
 }

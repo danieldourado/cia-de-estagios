@@ -8,6 +8,7 @@ $(document).ready(function ()
         
     
 	var quizData = {}
+	var resultsData = {}
 	var answersData = {}
     var questionNumber=0;
     var questionContainer = "#questionContainer1"
@@ -33,6 +34,7 @@ $(document).ready(function ()
     $.getJSON('./assets/js/data.json', function(data) 
     {
         quizData = data.quizData;
+        resultsData = data.resultsData
         numberOfQuestions=data.quizData.length; 
     })
     
@@ -80,7 +82,11 @@ function registerAnswer(answerId)
         tempPontua = quizData[questionNumber][answers][1]['pontua']        
     }
     if (!answersData[tempItem]) answersData[tempItem] = {}
-    if (!answersData[tempItem][tempPontua]) answersData[tempItem][tempPontua] = 0
+    if (!answersData[tempItem][tempPontua]) 
+    {
+        answersData[tempItem]["a"] = 0
+        answersData[tempItem]["b"] = 0
+    }    
     
     answersData[tempItem][tempPontua] += 1
 }
@@ -108,12 +114,11 @@ function changeQuestion(){
 	questionNumber++;
 	$(questionContainer).empty()
 	questionLock=false
-	displayQuestion()
+    if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide();}
 /*
 if(questionContainer=="#questionContainer1"){questionContainer2="#questionContainer1";questionContainer="#questionContainer2";}
 	else{questionContainer2="#questionContainer2";questionContainer="#questionContainer1";}
 
-if(questionNumber<numberOfQuestions){displayQuestion();}else{displayFinalSlide();}
 
  $(questionContainer2).animate({"right": "+=50%"},"slow", function() {$(questionContainer2).css('right','-1080px');$(questionContainer2).empty();});
  $(questionContainer).animate({"right": "+=50%"},"slow", function() {questionLock=false;});
@@ -145,9 +150,37 @@ function showPopup()
     }
 }
 
-function displayFinalSlide(){
+function displayFinalSlide()
+{
+    var resultsArray = getResultsArray(answersData)
+    var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
+    finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
+    for (var result in resultsArray)
+    {
+        if(resultsArray[result] == "none") continue
+        finalHTML += "<div class='result'>"+resultsArray[result]+"</div>"
+    }
+    finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Avançar</div></div>'
+    $(".modal-content").html(finalHTML)
 
-	$(questionContainer).append('<div class="questionText">You have finished the quiz!<br><br>Total questions: '+numberOfQuestions+'<br>Correct answers: '+score+'</div>');
-	
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    modal.style.display = "block";
+    window.onclick = function(event) {
+        if (event.target == btn) {
+            modal.style.display = "none";
+            }
+        }
+}
+
+function getResultsArray(answersData)
+{
+    var answersArray = []
+    for(var item in answersData)
+    {
+        if(answersData[item]['a'] > answersData[item]['b']) answersArray.push(resultsData[parseInt(item)-1]['result'][0]['content'])
+        if(answersData[item]['a'] < answersData[item]['b']) answersArray.push(resultsData[parseInt(item)-1]['result'][1]['content'])
+    }
+    return answersArray
 }
 });

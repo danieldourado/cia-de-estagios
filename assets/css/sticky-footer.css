@@ -127,3 +127,13 @@ body {
     left:-9999px;
     display: none;
 }
+.result{
+      margin:1px;
+      font-size:18px;
+      padding:2px;
+      padding-left:10px;
+      border: 2px solid white;
+      border-color: #FFFFFF;
+      background-color: transparent;
+      color: #fff;
+      }
