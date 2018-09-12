@@ -24,15 +24,11 @@ body {
   top:0px;
 }
 .main_ui_auto_confianca {
-    min-width:247px;
+    min-width:200px;
 }
 .status-text {
-    width: 100%;
-    position: absolute;
     font-weight: bold;
-    top: 50%;
-    left: 60%;
-    transform: translate(-41%, -50%);
+    transform: translate(12%, -200%);
 }
 .text-container {
     position: relative;
