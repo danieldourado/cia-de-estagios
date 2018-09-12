@@ -176,10 +176,12 @@ function showPopup(questionID = "1")
     
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
-    modal.style.display = "block";
+    //modal.style.display = "block";
+    $("#myModal").fadeIn(400)
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.display = "none";
+            //modal.style.display = "none";
+            $("#myModal").fadeOut( 400)
             $("#SFX_interface_click_popup")[0].play();
             if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after')
             {
@@ -209,7 +211,8 @@ function displayFinalSlide()
     
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
-    modal.style.display = "block";
+    //modal.style.display = "block";
+    $("#myModal").fadeIn(400)
     window.onclick = function(event) {
         if (event.target == btn) {
             displayTips()
