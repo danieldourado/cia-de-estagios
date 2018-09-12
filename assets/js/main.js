@@ -164,8 +164,9 @@ function showPopup(questionID = "1")
     var hasSound = quizData[questionNumber]['texto_popup'][0]['play_sound']
     if(hasSound)$('#'+hasSound)[0].play()
     
-    $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
-
+    if (tempTitulo) $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
+    else $(".modal-content").html(tempContent)
+    
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
     modal.style.display = "block";
