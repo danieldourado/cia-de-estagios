@@ -259,6 +259,9 @@ function getResultsArray(answersData)
 function registerSoundOnButton()
 {
     $(".option").mouseenter(function() {
+      $("#SFX_interface_mouse_over")[0].pause();
+      $("#SFX_interface_mouse_over")[0].currentTime =0;
+      
       $("#SFX_interface_mouse_over")[0].play();
     });    
     $(".option").click(function() {
