@@ -182,8 +182,8 @@ function showPopup(questionID = "1")
     window.onclick = onPopupClick;
     function onPopupClick(event) {
         if (event.target == modal) {
-            //modal.style.display = "none";
-            $("#myModal").fadeOut( 400)
+            modal.style.display = "none";
+            //$("#myModal").fadeOut( 400)
             $("#SFX_interface_click_popup")[0].play();
             if (quizData[questionNumber]['texto_popup'][0]['when_to_show'] === 'after')
             {

@@ -5,7 +5,6 @@ html {
 body {
     height:100%;
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
   background: rgba(200, 54, 54, 0);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -42,8 +41,7 @@ body {
   width: 100%;
   color: white;
   /* Set the fixed height of the footer here */
-  height: 257px;
-  line-height: 34px; /* Vertically center the text there */
+  min-height: 250px;
   background-color: #283641;
 }
 
@@ -74,15 +72,10 @@ body {
     transform: translate(-50%, 0);
 }      
 #questionContainer1{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .question{
-    margin-left: 16px;
-    margin-right: 16px;
-    
+    margin: 16px;
 }
 .modal {
     display: none; /* Hidden by default */
