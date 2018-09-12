@@ -1,13 +1,20 @@
 $(document).ready(function () 
 {
+    setTimeout(showSplashScreen, 2000);
+    $('.main-menu').hide()
+    $('#main-content-container').hide()
+    $('.footer').hide()
+    
+    
     $('.btn-main-menu').click(function()
     {
         $('#main-menu').hide()
         $('.main-menu').hide()
-        
+        $("#BGM_music_theme_song_v02")[0].play();
+        $('#main-content-container').show()
+        $('.footer').show()
         displayQuestion()
     })
-        
     
 	var quizData = {}
 	var resultsData = {}
@@ -256,3 +263,30 @@ function registerSoundOnButton()
     });
 }
 });
+
+function showSplashScreen()
+{
+    $("#splash-screen-container").fadeOut( 1000, function()
+    {
+        $("#splash-screen-container").empty()
+        $("#splash-screen-container").append('<img src="./assets/interface/LogoCiaEstagio.png" class="mx-auto d-block"></img>')
+        $("#splash-screen-container").fadeIn( 2000, function()
+        {
+            $("#splash-screen-container").fadeOut( 2000, function()
+            {
+                $("#splash-screen-container").empty()
+                $("#splash-screen-container").append('<img src="./assets/interface/Logo Grande.png" class="mx-auto d-block"></img>')
+                $("#splash-screen-container").fadeIn( 2000, function()
+                {
+                    $("#splash-screen-container").fadeOut( 2000, function()
+                    {
+                        $("#splash-screen-container").empty()
+                        $('#splash-screen').hide()
+                        $('.main-menu').show()
+                    });
+                });
+            });
+        });
+        
+    });
+}
