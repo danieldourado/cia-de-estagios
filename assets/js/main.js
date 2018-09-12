@@ -227,13 +227,13 @@ function displayTips()
     var finalHTML = "<div class='row justify-content-center align-items-center dica-word'>DICAS</div>"
     finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     
-    finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['title']+"</div>"
+    finalHTML +="<div style='text-align: center;'>"+tipsData['title']+"</div>"
     for (var tips in tipsData['tips'])
     {
         finalHTML += "<div class='result'>"+tipsData['tips'][tips]+"</div>"
     }
     finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
-    finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['ending']+"</div>"
+    finalHTML +="<div style='text-align: center;'>"+tipsData['ending']+"</div>"
     //finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
     $(".modal-content").html(finalHTML)
 
