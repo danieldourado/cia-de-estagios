@@ -200,7 +200,7 @@ function displayFinalSlide()
     var resultsArray = getResultsArray(answersData)
     var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
-    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
+    finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     for (var result in resultsArray)
     {
         if(resultsArray[result] == "none") continue
@@ -225,14 +225,14 @@ function displayFinalSlide()
 function displayTips()
 {
     var finalHTML = "<div class='row justify-content-center align-items-center dica-word'>DICAS</div>"
-    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
+    finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     
     finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['title']+"</div>"
     for (var tips in tipsData['tips'])
     {
         finalHTML += "<div class='result'>"+tipsData['tips'][tips]+"</div>"
     }
-    finalHTML += "<div class='row justify-content-center align-items-center'><hr></div>"
+    finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>"+tipsData['ending']+"</div>"
     //finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
     $(".modal-content").html(finalHTML)
