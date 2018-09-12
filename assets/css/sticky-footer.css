@@ -1,8 +1,9 @@
 html {
-
+    height:100%;
 }
 
 body {
+    height:100%;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   background: rgba(200, 54, 54, 0);

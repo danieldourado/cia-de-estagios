@@ -178,7 +178,9 @@ function showPopup(questionID = "1")
     var btn = document.getElementById("myBtn");
     //modal.style.display = "block";
     $("#myModal").fadeIn(400)
-    window.onclick = function(event) {
+    document.addEventListener('touchstart', onPopupClick);
+    window.onclick = onPopupClick;
+    function onPopupClick(event) {
         if (event.target == modal) {
             //modal.style.display = "none";
             $("#myModal").fadeOut( 400)
@@ -275,13 +277,13 @@ function showSplashScreen()
     $("#splash-screen-container").fadeOut( 1000, function()
     {
         $("#splash-screen-container").empty()
-        $("#splash-screen-container").append('<img src="./assets/interface/LogoCiaEstagio.png" class="mx-auto d-block"></img>')
+        $("#splash-screen-container").append('<img src="./assets/interface/LogoCiaEstagio.png" class="mx-auto d-block img-fluid w-80"></img>')
         $("#splash-screen-container").fadeIn( 2000, function()
         {
             $("#splash-screen-container").fadeOut( 2000, function()
             {
                 $("#splash-screen-container").empty()
-                $("#splash-screen-container").append('<img src="./assets/interface/Logo Grande.png" class="mx-auto d-block"></img>')
+                $("#splash-screen-container").append('<img src="./assets/interface/Logo Grande.png" class="mx-auto d-block img-fluid w-80"></img>')
                 $("#splash-screen-container").fadeIn( 2000, function()
                 {
                     $("#splash-screen-container").fadeOut( 2000, function()
