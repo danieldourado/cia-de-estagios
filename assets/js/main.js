@@ -53,7 +53,7 @@ function displayQuestion()
     
     var tempQuestion = quizData[questionNumber][questionText]
     var tempOption1 = quizData[questionNumber][answers][0][content]
-    $(questionContainer).append('<div id="question">'+tempQuestion+'</div>')
+    $(questionContainer).append('<div id="question" class="question">'+tempQuestion+'</div>')
     $(questionContainer).append('<div class="option" id="'+option1+'">'+tempOption1+'</div>')
     
     if (quizData[questionNumber][answers][1])

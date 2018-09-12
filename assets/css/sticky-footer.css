@@ -81,6 +81,11 @@ body {
     transform: translate(-50%, 0);
 }
 
+.question{
+    margin-left: 16px;
+    margin-right: 16px;
+    
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
