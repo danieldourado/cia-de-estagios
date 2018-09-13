@@ -6,11 +6,11 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "Você é um candidato em busca de uma vaga! Tem faculdade para pagar, precisa ajudar nas despesas de casa e mais importante que isso: está em busca de conhecimento e aprendizado para construir uma carreira de sucesso!",
+				"content": "Você é um candidato em busca de uma vaga! Tem faculdade para pagar, precisa ajudar em casa mas mais importante que isso: está em busca de conhecimento e aprendizado para construir uma carreira de sucesso!",
 				"when_to_show": "before",
 				"show_condition": "none"
 			}],
-			"texto_main_ui": "Você conseguirá encontrar uma vaga para seu perfil e mostrar que é o melhor candidato?",
+			"texto_main_ui": "Você conseguirá encontrar uma vaga no seu perfil e mostrar que é o melhor candidato para a vaga?",
 			"answers": [{
 				"content": "Pode apostar que sim!"
 			}]
@@ -21,7 +21,7 @@
 			"dia_da_semana": "Segunda Feira 08am",
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
-				"titulo": "O nível de dificuldade vai afetar a facilidade de você conseguir uma vaga:",
+				"titulo": "O nível de dificuldade vai afetar a facilidade de conseguir uma vaga:",
 				"content": "Fácil: Seu país não está em crise. Vive um momento de baixa inflação, crescimento estável e disputa por talentos! Todas as empresas querem contratar! </br> </br> Difícil: Você vive em um país corrupto, instável, com alto nível de desemprego e poucas vagas, o que eleva o nível de exigência das empresas que vão contratar.",
 				"when_to_show": "before",
 				"show_condition": "none"
@@ -47,7 +47,7 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "Você acorda em uma manhã ensolarada de segunda-feira super motivado e começa a buscar na internet e redes sociais por vagas em seu perfil. Acessa o site da Companhia de Estágios porque sabe que lá estão as melhores vagas do país, nas melhores e maiores empresas do mundo.",
+				"content": "Você começa em uma manhã ensolarada de segunda-feira super motivado e começa a buscar na internet e redes sociais por vagas em seu perfil. Acessa o site da Companhia de Estágios porque sabe que lá estão as melhores vagas do país, nas melhores e maiores empresas do mundo.",
 				"when_to_show": "before",
 				"show_condition": "none"
 			}],
@@ -55,7 +55,7 @@
 			"answers": [{
 					"item": "6",
 					"pontua": "a",
-					"content": "Lê e pesquisa os requisitos para ver se batem com o seu perfil antes de se aplicar."
+					"content": "Lê e pesquisa os requisitos para ver se eles batem com o seu perfil antes de se aplicar."
 				},
 				{
 					"item": "6",
@@ -74,12 +74,12 @@
 			"answers": [{
 					"item": "6",
 					"pontua": "b",
-					"content": "Deixa para dar uma pesquisada sobre a empresa durante o trajeto de ida."
+					"content": "Deixo para dar uma pesquisada sobre a empresa durante o trajeto de ida."
 				},
 				{
 					"item": "6",
 					"pontua": "a",
-					"content": "Inicia imediatamente uma enorme pesquisa sobre a empresa. Adiciona as pessoas do RH da empresa no LinkedIn."
+					"content": "Inicio imediatamente uma enorme pesquisa sobre a empresa. Adiciono as pessoas do Rh da empresa no LinkedIn."
 				}
 			]
 		},
@@ -91,27 +91,27 @@
 			"nivel_de_autoconfianca": "88%",
 			"texto_popup": [{
 					"titulo": "",
-					"content": "A situação se complicou. Você chegou muito atrasado na entrevista e acabou perdendo a chance! Ficou feliz por ter ajudado alguém, mas agora o jeito é recomeçar as buscas.",
+					"content": "A situação se complicou e você chegou muito atrasado na entrevista e acabou perdendo a chance! Ficou feliz de ter ajudado mas agora o jeito é recomeçar as buscas.",
 					"when_to_show": "after",
 					"show_condition": "1"
 				},
 				{
 					"titulo": "",
-					"content": "Quando você ia sair da estação viu uma chuva torrencial que fez a energia cair. Não teve jeito, acabou perdendo a entrevista. De volta à estaca zero.",
+					"content": "Quando você ia sair da estação viu uma chuva torrencial que fez a energia cair. Não teve jeito, acabou perdendo a entrevista. De volta a estaca zero.",
 					"when_to_show": "after",
 					"show_condition": "2"
 				}
 			],
-			"texto_main_ui": "Você está a caminho da entrevista. Faltando uma estação para você descer a pessoa ao seu lado começa a passar mal. Você:",
+			"texto_main_ui": "Você está a caminho da entrevista, falta uma estação para você descer e a pessoa que está do seu lado começa a passar mal:",
 			"answers": [{
 					"item": "7",
 					"pontua": "a",
-					"content": "Perde a estação, mesmo que me atrase 5 min. para a entrevista, e ajuda a pessoa."
+					"content": "Perco a estação, mesmo que me atrase 5 min. para a entrevista e ajudo a pessoa."
 				},
 				{
 					"item": "7",
 					"pontua": "b",
-					"content": "Desce na estação porque não pode chegar atrasado e correr o risco de perder a entrevista."
+					"content": "Desço na estação porque não posso chegar atrasado e correr o risco de perder a entrevista."
 				}
 			]
 		},
@@ -123,11 +123,11 @@
 			"nivel_de_autoconfianca": "70%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "Só tinha essa data e você teve de correr o risco de se atrasar para o casamento, afinal não poderia perder mais essa chance!",
+				"content": "Só tinha essa data e você teve que correr o risco de se atrasar para o casamento, afinal não poderia perder mais essa chance!",
 				"when_to_show": "after",
 				"show_condition": "1"
 			}],
-			"texto_main_ui": "Good news! Ligaram marcando uma entrevista na sexta à tarde, você deu ok e ao desligar se lembrou que tem um casamento para ir na mesma sexta às 20 horas. Você:",
+			"texto_main_ui": "Good News! Ligaram marcando uma entrevista na sexta a tarde, você deu ok e ao desligar se lembrou que tem casamento na mesma sexta às 20 horas. Você:",
 			"answers": [{
 					"item": "5",
 					"pontua": "b",
@@ -152,7 +152,7 @@
 				"when_to_show": "after",
 				"show_condition": "none"
 			}],
-			"texto_main_ui": "Ao chegar, você vê a sala de espera lotada de candidatos. Aí você:",
+			"texto_main_ui": "Ao chegar vê a sala de espera lotada de candidatos. Aí você:",
 			"answers": [{
 					"item": "4",
 					"pontua": "a",
@@ -171,7 +171,7 @@
 			"relogio": "10 pm",
 			"dia_da_semana": "Terça-Feira",
 			"nivel_de_autoconfianca": "100%",
-			"texto_main_ui": "Já é terça feira. Após ser aprovado na primeira etapa, você está indo para a etapa final da seleção e para não se atrasar pega um táxi. Entrando você:",
+			"texto_main_ui": "Já é terça feira. Após ser aprovado na primeira etapa ontem, você está indo então para a etapa final e para não se atrasar pega um táxi. Entrando você...",
 			"answers": [{
 					"item": "4",
 					"pontua": "a",
@@ -190,7 +190,7 @@
 			"relogio": "10 pm",
 			"dia_da_semana": "Terça-Feira",
 			"nivel_de_autoconfianca": "100%",
-			"texto_main_ui": "No elevador, outro candidato que chegou em cima da hora comenta: ‘’putz, qual andar era mesmo o do processo de seleção?’’ Você:",
+			"texto_main_ui": "No elevador outro candidato que chegou em cima da hora comenta: ‘’putz, qual andar era mesmo o do processo de seleção?’’ Você:",
 			"answers": [{
 					"item": "3",
 					"pontua": "a",
@@ -209,7 +209,7 @@
 			"relogio": "09 am",
 			"dia_da_semana": "Terça-Feira",
 			"nivel_de_autoconfianca": "88%",
-			"texto_main_ui": "Você já está na fase final! Agora são só você e mais dois finalistas! Vocês estão aguardando na sala de espera e um deles (o do elevador) pede ajuda para entender melhor sobre um dos negócios da empresa. Você:",
+			"texto_main_ui": "Você passou pela primeira fase e já está na fase final! Agora é só você e mais dois finalistas! Vocês estão aguardando na sala de espera e um deles (o do elevador) pede ajuda para entender melhor sobre um dos negócios da empresa. Você:",
 			"answers": [{
 					"item": "7",
 					"pontua": "a",
@@ -228,7 +228,7 @@
 			"relogio": "13 am",
 			"dia_da_semana": "Terça-Feira",
 			"nivel_de_autoconfianca": "95%",
-			"texto_main_ui": "Você fez uma ótima entrevista, volta para casa todo confiante. Ao chegar em casa, você percebe que voltou com o crachá do prédio. Você:",
+			"texto_main_ui": "Você fez uma ótima entrevista, volta para casa todo confiante. Ao chegar em casa você percebe que voltou com o crachá do prédio. Você:",
 			"answers": [{
 					"item": "3",
 					"pontua": "b",
@@ -247,7 +247,7 @@
 			"relogio": "09 am",
 			"dia_da_semana": "Quinta-Feira",
 			"nivel_de_autoconfianca": "88%",
-			"texto_main_ui": "Opa! Surgiu mais uma entrevista! Enquanto você espera o resultado da anterior, aproveita para conhecer mais essa oportunidade. Bora para mais uma entrevista! Você:",
+			"texto_main_ui": "Opa! Surgiu mais uma entrevista! Enquanto você espera o resultado da anterior aproveita para conhecer mais essa oportunidade. Bora para mais uma entrevista! Você:",
 			"answers": [{
 					"item": "2",
 					"pontua": "b",
@@ -300,7 +300,7 @@
 			"nivel_de_autoconfianca": "80%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "Lembra da primeira entrevista? Aquela em que você foi para a fase final? Pois bem: Parabéns! Você foi aprovado! Seu feeling estava certo, você realmente fez uma ótima entrevista!.",
+				"content": "Lembra da primeira entrevista? Que você foi para a fase final? Pois bem: Parabéns! Você foi aprovado! Seu feeling estava certo, você realmente fez uma ótima entrevista!.",
 				"when_to_show": "before",
 				"show_condition": "none",
 				"play_sound": "SFX_feedback_achievement"
@@ -309,12 +309,12 @@
 			"answers": [{
 					"item": "4",
 					"pontua": "a",
-					"content": "Socializa com toda a galera."
+					"content": "Socializa com toda galera."
 				},
 				{
 					"item": "4",
 					"pontua": "b",
-					"content": "Foca em aprender tudo o que pode e entregar o que te pediram."
+					"content": "Foca em aprender tudo que pode e entregar o que te pediram."
 				}
 			]
 		},
@@ -324,7 +324,7 @@
 			"relogio": "09 am",
 			"dia_da_semana": "Segunda-Feira",
 			"nivel_de_autoconfianca": "80%",
-			"texto_main_ui": "Você está trabalhando e percebeu que ninguém tem chefe na empresa. A gestão é horizontal. Cada um é responsável por entregar sua parte e trabalhar em equipe. Você:",
+			"texto_main_ui": "Você está trabalhando e percebeu que ninguém meio que tem chefe na empresa. A gestão é horizontal. Cada um é responsável por entregar sua parte e trabalhar em equipe. Você:",
 			"answers": [{
 					"item": "2",
 					"pontua": "b",
@@ -333,7 +333,7 @@
 				{
 					"item": "2",
 					"pontua": "a",
-					"content": "Se vira mas preferiria ter um líder, regras e tarefas claras."
+					"content": "Se vira mas preferiria ter um líder e regras e tarefas claras."
 				}
 			]
 		},
@@ -347,12 +347,12 @@
 			"answers": [{
 					"item": "6",
 					"pontua": "b",
-					"content": "Começa a fazer imediatamente."
+					"content": "Começo a fazer imediatamente."
 				},
 				{
 					"item": "6",
 					"pontua": "a",
-					"content": "Se programa para fazer um planejamento de como executar a tarefa."
+					"content": "Me programo para fazer um planejamento de como executar a tarefa."
 				}
 			]
 		},
@@ -371,7 +371,7 @@
 				{
 					"item": "5",
 					"pontua": "a",
-					"content": "Dá uma esticadinha e termina hoje mesmo."
+					"content": "Dou uma esticadinha e termino hoje mesmo."
 				}
 			]
 		},
@@ -391,7 +391,7 @@
 			"answers": [{
 					"item": "5",
 					"pontua": "b",
-					"content": "Pensa: ‘’essa empresa só esfola o funcionário’’, mas vai."
+					"content": "Pensa: ‘’essa empresa só esfola o funcionário mesmo’’ mas vai."
 				},
 				{
 					"item": "5",
@@ -475,7 +475,7 @@
 				},
 				{
 					"pontua": "b",
-					"content": "Fazer o que é combinado, quando é combinado, é muito importante. Mas ter alguma flexibilidade para ir além e fazer o que não foi combinado às vezes pode ser esperado pelas empresas ;)"
+					"content": "Fazer o que é combinado, quando é combinado é muito importante mas ter alguma flexibilidade para ir além e fazer o que não foi combinado às vezes pode ser esperada pelas empresas ;)"
 				}
 			]
 		},
@@ -483,11 +483,11 @@
 			"item": "6",
 			"result": [{
 					"pontua": "a",
-					"content": "Todas as empresas buscam perfis que planejam antes de executar, mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil, outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga para a qual você se aplicar!"
+					"content": "Todas as empresas buscam perfis que planejam antes de executar mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga que você se aplicar!"
 				},
 				{
 					"pontua": "b",
-					"content": "Todas as empresas buscam perfis que planejam antes de executar, mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil, outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga para a qual você se aplicar!"
+					"content": "Todas as empresas buscam perfis que planejam antes de executar mas também valorizam pessoas que sabem se virar e improvisar. Algumas vagas vão precisar mais de um perfil outras de outro. Fique ligado e procure conhecer bem a empresa e a vaga que você se aplicar!"
 				}
 			]
 		},
@@ -499,20 +499,20 @@
 				},
 				{
 					"pontua": "b",
-					"content": "As empresas valorizam quem se preocupa sempre em ajudar! Procurar dar uma força, às vezes, é importante!"
+					"content": "As empresas valorizam quem se preocupa sempre em ajudar! Procurar dar uma força as vezes é importante!"
 				}
 			]
 		}
 	],
 	"tipsData": {
 		"title": "Se liga nessas super dicas para turbinar seu cadastro na Companhia de Estágios:",
-		"ending": "Esperamos que as dicas ajudem a conseguir o estágio dos seus sonhos! Atualize seu cadastro, aplique-se nas vagas e boa sorte!!",
+		"ending": "Esperamos que as dicas ajudem a conseguir o estágio dos sonhos! Atualize seu cadastro, se aplique nas vagas e boa sorte!!",
 		"tips": [
 			"As empresas buscam pessoas com nível de inglês de básico para cima! É importante deixar seu nível de idioma atualizado! Se estiver cursando suas chances aumentam ainda mais!",
-			"Hoje boa parte das vagas pede algum conhecimento em Excel! Se você não teve a chance de fazer um curso, não tem problema! Você pode estudar um pouco por tutoriais na internet! Ter um nível de Excel intermediário ou superior aumenta muito suas chances de ser chamado!",
-			"Atenção: a maioria das vagas é das 9 às 16 horas com uma hora de almoço! Isso significa que as empresas buscam mais pessoas que estudam à noite do que de manhã. Se você estuda de manhã ou à tarde mas pode mudar seu horário para o noturno em caso de aprovação em alguma empresa, já pode deixar no cadastro essa informação! Suas chances de ser chamado vão aumentar!",
-			"Se não tem experiência profissional anterior, não se preocupe! As empresas não olham para isso! Elas estão avaliando potencial e você pode deixar seu currículo mais interessante se colocar por exemplo informações sobre trabalho voluntário e participação em entidades acadêmicas como a empresa jr. da sua faculdade. Se tiver um intercâmbio será também um grande diferencial.",
-			"Por fim, fique atento ao ano de formação que as empresas pedem nas vagas! Se você não estiver dentro do ano de formação inicialmente solicitado mas consegue prorrogar sua formação, por exemplo, pode atualizar no sistema."
+			"Hoje boa parte das vagas pede algum conhecimento em Excel! Se você não teve a chance de fazer um curso não tem problema! Você pode estudar um pouco por tutoriais na internet! Ter um nível de Excel intermediário ou superior aumenta muito suas chances de ser chamado!",
+			"Atenção: a maioria das vagas é das 9 às 16 horas com uma hora de almoço! Isso significa que as empresas buscam mais pessoas que estudam a noite do que de manhã. Se você estuda de manhã ou a tarde mas pode mudar seu horário para o noturno em caso de aprovação em alguma empresa já pode deixar no cadastro essa informação! Suas chances de ser chamado vão aumentar!",
+			"Se não tem experiência profissional anterior não se preocupe! As empresas não olham para isso! Elas estão avaliando potencial e você pode deixar seu currículo mais interessante se colocar por exemplo informações sobre trabalho voluntário, participação em entidades acadêmicas como a empresa jr. da sua faculdade e se tiver um intercâmbio será também um grande diferencial.",
+			"Por fim, fique atento ao ano de formação que as empresas pedem nas vagas! Se você não estiver dentro do ano de formação inicialmente solicitado mas consegue prorrogar sua formação por exemplo, pode atualizar no sistema."
 		]
 	}
 }

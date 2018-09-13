@@ -57,15 +57,12 @@ body {
       padding:2px;
       padding-left:10px;
       padding-right:10px;
-      border: 2px solid white;
       cursor:pointer;
-      border-color: #0d7680;
       background-color: transparent;
       color: #fff;
       }
 .option:hover{
-      border:#FFF solid 2px;
-      color:#FFF;
+      background-color: #606771;
       }
 
 .btn-main-menu
@@ -141,7 +138,7 @@ body {
 }
 
 .main-menu img{
-  max-width:45%; /* you can use % */
+  max-width:35%; /* you can use % */
   height: auto;
 }
 
