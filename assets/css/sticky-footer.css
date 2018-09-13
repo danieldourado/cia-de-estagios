@@ -57,11 +57,28 @@ body {
       padding:2px;
       padding-left:10px;
       padding-right:10px;
+      border: 2px solid white;
       cursor:pointer;
+      border-color: #FFF;
       background-color: transparent;
       color: #fff;
       }
 .option:hover{
+      border:#FFF solid 2px;
+      background-color: #606771;
+      }
+
+.option-question{
+      margin:15px;
+      font-size:16px;
+      padding:2px;
+      padding-left:10px;
+      padding-right:10px;
+      cursor:pointer;
+      background-color: transparent;
+      color: #fff;
+      }
+.option-question:hover{
       background-color: #606771;
       }
 
