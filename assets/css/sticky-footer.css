@@ -46,7 +46,7 @@ body {
 }
 .svg-icon
 {
-    width:10px;
+    width:20px;
     margin-bottom: 4px;
     margin-right: 4px;
 }
@@ -169,7 +169,7 @@ body {
 
 .modal-content {
     background-color: #283641;
-    margin-top:15%;
+    margin-top:35%;
     margin-bottom:15%;
     padding: 20px;
     border: 1px solid #888;

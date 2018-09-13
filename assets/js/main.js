@@ -62,11 +62,11 @@ function displayQuestion()
     var tempOption1 = quizData[questionNumber][answers][0][content]
     $(questionContainer).append('<hr></hr>')
     $(questionContainer).append('<div id="question" class="question">'+tempQuestion+'</div>')
-    $(questionContainer).append('<div class="option-question option-click-class" id="'+option1+'"><svg class="svg-icon" aria-hidden="true" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-7x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" class=""></path></svg><span>'+tempOption1+'</span></div>')
+    $(questionContainer).append('<div class="option-question option-click-class" id="'+option1+'"><svg class="svg-icon" aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-2x"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" ></path></svg><span>'+tempOption1+'</span></div>')
     
     if (quizData[questionNumber][answers][1])
     {
-        $(questionContainer).append('<div class="option-question option-click-class" id="'+option2+'"><svg class="svg-icon" aria-hidden="true" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14 fa-7x"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" class=""></path></svg><span>'+quizData[questionNumber][answers][1][content]+'</span></div>')
+        $(questionContainer).append('<div class="option-question option-click-class" id="'+option2+'"><svg class="svg-icon"  aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-2x"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" ></path></svg><span>'+quizData[questionNumber][answers][1][content]+'</span></div>')
     }
     
     registerSoundOnButton()
@@ -172,12 +172,12 @@ function showPopup(questionID = "1")
     var hasSound = quizData[questionNumber]['texto_popup'][0]['play_sound']
     if(hasSound)$('#'+hasSound)[0].play()
     
-    var finalHTML = ""
+    var finalHTML = "<hr></hr>"
     
     if (tempTitulo) finalHTML = "<b>"+tempTitulo+"</b><br/>"+tempContent
     else finalHTML = tempContent
     
-    var buttonHtml = '<div class="row justify-content-center align-items-center"><div id="myBtn"class="option btn-main-menu popup-button">OK</div></div>'
+    var buttonHtml = '<div class="row justify-content-center align-items-center"><div id="myBtn"class="option btn-main-menu popup-button">Clique para avançar</div></div>'
     finalHTML += buttonHtml
     $(".modal-content").html(finalHTML)
     var modal = document.getElementById('myModal');
