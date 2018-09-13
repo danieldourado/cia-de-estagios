@@ -44,6 +44,12 @@ body {
   min-height: 250px;
   background-color: #283641;
 }
+.svg-icon
+{
+    width:10px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
 
 .option{
       margin:15px;
