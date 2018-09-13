@@ -67,6 +67,11 @@ body {
       border:#FFF solid 2px;
       background-color: #606771;
       }
+.option:active{
+      color: #f4a742;
+      border:#FFF solid 2px;
+      background-color: #606771;
+      }
 
 .option-question{
       margin:15px;
@@ -81,7 +86,10 @@ body {
 .option-question:hover{
       background-color: #606771;
       }
-
+.option-question:active{
+      color: #f4a742;
+      background-color: #606771;
+      }
 .btn-main-menu
 {
   font-size:40px;
