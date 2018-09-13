@@ -22,7 +22,7 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "O nível de dificuldade vai afetar a facilidade de conseguir uma vaga:",
-				"content": "Fácil: Seu país não está em crise. Vive um momento de baixa inflação, crescimento estável e disputa por talentos! Todas as empresas querem contratar! </br> Difícil: Você vive em um país corrupto, instável, com alto nível de desemprego e poucas vagas, o que eleva o nível de exigência das empresas que vão contratar.",
+				"content": "Fácil: Seu país não está em crise. Vive um momento de baixa inflação, crescimento estável e disputa por talentos! Todas as empresas querem contratar! </br> </br> Difícil: Você vive em um país corrupto, instável, com alto nível de desemprego e poucas vagas, o que eleva o nível de exigência das empresas que vão contratar.",
 				"when_to_show": "before",
 				"show_condition": "none"
 			}],

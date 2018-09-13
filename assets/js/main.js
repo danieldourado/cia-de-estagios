@@ -220,7 +220,9 @@ function displayFinalSlide()
     var btn = document.getElementById("myBtn");
     //modal.style.display = "block";
     $("#myModal").fadeIn(400)
-    window.onclick = function(event) {
+    document.addEventListener('touchstart', onPopupClick);
+    window.onclick = onPopupClick;
+    function onPopupClick(event) {
         if (event.target == btn) {
             displayTips()
             }

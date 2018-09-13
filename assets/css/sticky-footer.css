@@ -41,7 +41,7 @@ body {
   width: 100%;
   color: white;
   /* Set the fixed height of the footer here */
-  min-height: 250px;
+  min-height: 50px;
   background-color: #283641;
 }
 .svg-icon
@@ -198,4 +198,14 @@ hr {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.splash-screen-container
+{
+    max-width:80%;
+}
+.splash-screen-container img
+{
+    max-width:60%;
+    max-height:30%;
 }
