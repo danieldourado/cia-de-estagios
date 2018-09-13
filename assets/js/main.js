@@ -61,16 +61,16 @@ function displayQuestion()
     var tempQuestion = quizData[questionNumber][questionText]
     var tempOption1 = quizData[questionNumber][answers][0][content]
     $(questionContainer).append('<div id="question" class="question">'+tempQuestion+'</div>')
-    $(questionContainer).append('<div class="option" id="'+option1+'">'+tempOption1+'</div>')
+    $(questionContainer).append('<div class="option option-click-class" id="'+option1+'">'+tempOption1+'</div>')
     
     if (quizData[questionNumber][answers][1])
     {
-        $(questionContainer).append('<div class="option" id="'+option2+'">'+quizData[questionNumber][answers][1][content]+'</div>')
+        $(questionContainer).append('<div class="option option-click-class" id="'+option2+'">'+quizData[questionNumber][answers][1][content]+'</div>')
     }
     
     registerSoundOnButton()
     $('#SFX_feedback_screen_swoosh')[0].play()
-    $('.option').click(function()
+    $('.option-click-class').click(function()
     {
         if(questionLock==false)
         {
@@ -171,9 +171,14 @@ function showPopup(questionID = "1")
     var hasSound = quizData[questionNumber]['texto_popup'][0]['play_sound']
     if(hasSound)$('#'+hasSound)[0].play()
     
-    if (tempTitulo) $(".modal-content").html("<b>"+tempTitulo+"</b><br/>"+tempContent)
-    else $(".modal-content").html(tempContent)
+    var finalHTML = ""
     
+    if (tempTitulo) finalHTML = "<b>"+tempTitulo+"</b><br/>"+tempContent
+    else finalHTML = tempContent
+    
+    var buttonHtml = '<div class="row justify-content-center align-items-center"><div id="myBtn"class="option btn-main-menu popup-button">OK</div></div>'
+    finalHTML += buttonHtml
+    $(".modal-content").html(finalHTML)
     var modal = document.getElementById('myModal');
     var btn = document.getElementById("myBtn");
     //modal.style.display = "block";
@@ -181,7 +186,7 @@ function showPopup(questionID = "1")
     document.addEventListener('touchstart', onPopupClick);
     window.onclick = onPopupClick;
     function onPopupClick(event) {
-        if (event.target == modal) {
+        if (event.target == btn) {
             modal.style.display = "none";
             //$("#myModal").fadeOut( 400)
             $("#SFX_interface_click_popup")[0].play();
@@ -234,6 +239,7 @@ function displayTips()
     }
     finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     finalHTML +="<div style='text-align: center;'>"+tipsData['ending']+"</div>"
+    finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Fim</div></div>'
     //finalHTML += '<div class="row justify-content-center align-items-center"><div class="option btn-main-menu" id="myBtn">Finalizar</div></div>'
     $(".modal-content").html(finalHTML)
 
