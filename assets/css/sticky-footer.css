@@ -47,6 +47,7 @@ body {
   /* Set the fixed height of the footer here */
   min-height: 50px;
   background-color: #283641;
+  background-color: rgba(28,36,41,0.8); /* Black w/ opacity */
 }
 .svg-icon
 {
