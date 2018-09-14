@@ -25,6 +25,10 @@ body {
 }
 .main_ui_auto_confianca {
     min-width:200px;
+    height:57px;
+}
+.main-ui-cia-logo{
+    margin-top: -20px;
 }
 .status-text {
     font-weight: bold;
@@ -142,6 +146,9 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: #283641; /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.main-content-container{
+    padding-top: 7px;
 }
 .splash-screen {
     background: url(../interface/BG_SplashScreen.jpg) no-repeat center center fixed; 
