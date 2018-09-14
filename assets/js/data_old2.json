@@ -102,7 +102,7 @@
 					"show_condition": "2"
 				}
 			],
-			"texto_main_ui": "Você está a caminho da entrevista. Faltando uma estação para você descer, a pessoa ao seu lado começa a passar mal. Você:",
+			"texto_main_ui": "Você está a caminho da entrevista. Faltando uma estação para você descer a pessoa ao seu lado começa a passar mal. Você:",
 			"answers": [{
 					"item": "7",
 					"pontua": "a",
@@ -148,7 +148,7 @@
 			"nivel_de_autoconfianca": "90%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "Parabéns! Apesar de muitos candidatos concorrendo à vaga você fez uma boa entrevista! Conseguiu demonstrar todo seu potencial e foi aprovado nessa primeira etapa! Agora basta aguardar o contato para a entrevista final!",
+				"content": "Parabéns! Apesar de muitos candidatos concorrendo a vaga você fez uma boa entrevista! Conseguiu demonstrar todo seu potencial e foi aprovado nessa primeira etapa! Agora basta aguardar o contato para a entrevista final!",
 				"when_to_show": "after",
 				"show_condition": "none"
 			}],
@@ -171,7 +171,7 @@
 			"relogio": "10 pm",
 			"dia_da_semana": "Terça-Feira",
 			"nivel_de_autoconfianca": "100%",
-			"texto_main_ui": "Já é terça-feira. Após ser aprovado na primeira etapa, você está indo para a etapa final da seleção e para não se atrasar pega um táxi. Entrando você:",
+			"texto_main_ui": "Já é terça feira. Após ser aprovado na primeira etapa, você está indo para a etapa final da seleção e para não se atrasar pega um táxi. Entrando você:",
 			"answers": [{
 					"item": "4",
 					"pontua": "a",
@@ -408,7 +408,7 @@
 			"nivel_de_autoconfianca": "100%",
 			"texto_popup": [{
 				"titulo": "",
-				"content": "PARABÉNS! VOCÊ RECEBEU SEU PRIMEIRO PAGAMENTO! PAGOU A FACULDADE, AJUDOU EM CASA E AINDA DEU PARA COMEÇAR O CURSO DE INGLÊS!",
+				"content": "PARABÉNS! VOCÊ RECEBEU SEU PRIMEIRO PAGAMENTO! PAGOU A FACULDADE, AJUDOU EM CASA E AINDA DEU PARA COMEÇAR O CURSO DE INGLÊS!.",
 				"when_to_show": "before",
 				"show_condition": "none"
 			}],

@@ -1,7 +1,7 @@
 $(document).ready(function () 
 {
     setTimeout(showSplashScreen, 2000);
-    $('.main-menu').hide()
+    $('#main-menu').hide()
     $('#main-content-container').hide()
     $('.footer').hide()
     
@@ -9,7 +9,6 @@ $(document).ready(function ()
     $('.btn-main-menu').click(function()
     {
         $('#main-menu').hide()
-        $('.main-menu').hide()
         $("#BGM_music_theme_song_v02")[0].play();
         $('#main-content-container').show()
         $('.footer').show()
@@ -202,7 +201,7 @@ function showPopup(questionID = "1")
 
 function displayFinalSlide()
 {
-    $('.main-menu').show()
+    $('#main-menu').show()
     var resultsArray = getResultsArray(answersData)
     var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
@@ -299,7 +298,7 @@ function showSplashScreen()
                     {
                         $("#splash-screen-container").empty()
                         $('#splash-screen').hide()
-                        $('.main-menu').show()
+                        $('#main-menu').show()
                     });
                 });
             });

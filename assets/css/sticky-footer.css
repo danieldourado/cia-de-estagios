@@ -93,9 +93,8 @@ body {
 .btn-main-menu
 {
   font-size:40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  
+  text-align:center;
+  width:100%;  
 }
 
 .popup-button
@@ -137,10 +136,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -162,15 +158,10 @@ body {
     overflow: auto; /* Enable scroll if needed */
 }
 
-.main-menu img{
-  max-width:35%; /* you can use % */
-  height: auto;
-}
-
 .modal-content {
     background-color: #283641;
-    margin-top:35%;
-    margin-bottom:15%;
+    /*margin-top:35%;
+    margin-bottom:15%;*/
     padding: 20px;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
