@@ -27,8 +27,10 @@ body {
     min-width:200px;
     height:57px;
 }
-.main-ui-cia-logo{
-    margin-top: -20px;
+@media only screen and (max-width: 380px) {
+    .main-ui-cia-logo{
+        margin-top: -20px;
+    }
 }
 .status-text {
     font-weight: bold;
