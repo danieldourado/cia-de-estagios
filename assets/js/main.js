@@ -9,6 +9,8 @@ $(document).ready(function ()
     $('.btn-main-menu').click(function()
     {
         $('#main-menu').hide()
+        $('#main-menu-background').hide()
+        
         $("#BGM_music_theme_song_v02")[0].play();
         $('#main-content-container').show()
         $('.footer').show()
@@ -67,7 +69,8 @@ function displayQuestion()
     {
         $(questionContainer).append('<div class="option-question option-click-class" id="'+option2+'"><svg class="svg-icon"  aria-hidden="true" data-prefix="fas" data-icon="chevron-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-2x"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" ></path></svg><span>&nbsp;&nbsp;&nbsp;'+quizData[questionNumber][answers][1][content]+'</span></div>')
     }
-    
+    $('.footer').hide()
+    $('.footer').fadeIn(1000)
     registerSoundOnButton()
     $('#SFX_feedback_screen_swoosh')[0].play()
     $('.option-click-class').click(function()
@@ -201,7 +204,7 @@ function showPopup(questionID = "1")
 
 function displayFinalSlide()
 {
-    $('#main-menu').show()
+    $('#main-menu-background').show()
     var resultsArray = getResultsArray(answersData)
     var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
