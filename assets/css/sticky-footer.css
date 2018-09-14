@@ -178,6 +178,7 @@ body {
     width: 100%; /* Could be more or less, depending on screen size */
     color:white;
     text-align:center;
+    margin:auto;
 }
 
 .preload-images{
