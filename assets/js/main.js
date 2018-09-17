@@ -36,6 +36,10 @@ $(document).ready(function ()
     const nivelDeAutoconfianca = "nivel_de_autoconfianca"
     const option1="option1"
     const option2="option2"
+    var difficultyData = {}
+    var total = 0
+    var facil = 0
+    var dificil = 0
     
     var questionContainer2=new Object;
     var questionLock=false;
@@ -52,6 +56,13 @@ $(document).ready(function ()
     $('#BGM_music_theme_song_v02').prop("volume", 0.5);
 
     registerSoundOnButton()
+    
+    $.get( "https://theglitchfactory.com.br/ciadeestagios/backend/index.php?data=difficultyData", function( data ) {
+        difficultyData = data
+        total = parseInt(difficultyData['facil'])+parseInt(difficultyData['dificil'])
+        facil = parseInt(difficultyData['facil']/total*100)
+        dificil = parseInt(difficultyData['dificil']/total*100)
+    }, "json" );
     
 function displayQuestion()
 {
@@ -206,7 +217,8 @@ function displayFinalSlide()
 {
     $('#main-menu-background').show()
     var resultsArray = getResultsArray(answersData)
-    var finalHTML = "<div class='row justify-content-center align-items-center'><img src='./assets/interface/Stat_ProfileIcon.png'></div>"
+    var finalHTML = "<div class='row justify-content-center align-items-center'><img class='profile-icon' src='./assets/interface/Stat_ProfileIcon.png'></div>"
+    finalHTML += "<div class='media-geral'><div class='row result'>Média Geral</div><div class='row result'>FÁCIL-"+facil+"%</div><div class='row result'>DIFÍCIL-"+dificil+"%</div></div>"
     finalHTML +="<div class='row justify-content-center align-items-center'>Perfil do usuário</div>"
     finalHTML += "<div class='justify-content-center align-items-center'><hr></div>"
     for (var result in resultsArray)

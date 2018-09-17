@@ -32,6 +32,11 @@ body {
         margin-top: -20px;
     }
 }
+@media only screen and (max-width: 450px) {
+    .profile-icon{
+        padding-right: 100px;
+    }
+}
 .status-text {
     font-weight: bold;
     transform: translate(12%, -200%);
@@ -190,7 +195,8 @@ body {
       margin:1px;
       font-size:18px;
       padding:2px;
-      padding-left:10px;
+      padding-left:5px;
+      padding-right:5px;
       border: 2px solid white;
       border-color: #FFFFFF;
       background-color: transparent;
@@ -234,3 +240,13 @@ hr {
     max-width:60%;
     max-height:30%;
 }
+.media-geral
+{
+    position:absolute;
+    text-align:center;
+    right:25px;
+    height: 92px;
+    display: grid;
+    padding-top:50px;
+}
+
